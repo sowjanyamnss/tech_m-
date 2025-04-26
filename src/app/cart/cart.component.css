@@ -1,0 +1,120 @@
+.cart-container {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .item-image {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+  }
+  
+  .item-details {
+    flex: 1;
+  }
+  
+  input {
+    width: 50px;
+    text-align: center;
+  }
+  
+  button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    cursor: pointer;
+  }
+  
+  .cart-summary {
+    margin-top: 20px;
+  }
+  
+  .checkout-btn {
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+
+  #carouselExample {
+    width: 95%; /* Adjust as needed */
+    margin: 20px auto; /* Center the carousel */
+    border-radius: 10px; /* Optional: Rounded corners */
+    overflow: hidden; /* Ensure images don't overflow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow */
+  }
+  
+  .carousel-inner {
+    width: 100%;
+    height: auto; /* Allow images to scale proportionally */
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%; /* Adjust control size */
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 50%; /* Make controls circular */
+    padding: 10px; /* Add padding for better visibility */
+  }
+  
+  .carousel-control-prev-icon {
+    margin-left: -20px; /* Adjust positioning */
+  }
+  
+  .carousel-control-next-icon {
+    margin-right: -20px; /* Adjust positioning */
+  }
+  
+  /* Optional: Add hover effect to controls */
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    opacity: 0.8;
+  }
+  
+  /* Optional: Add a subtle animation */
+  .carousel-item {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    transform: translateX(0);
+  }
+  
+  .carousel-item-next.carousel-item-start,
+  .carousel-item-prev.carousel-item-end {
+    transform: translateX(0);
+  }
+  .carousel-control-prev,
+.carousel-control-next {
+    background: none !important; /* Removes background */
+    border: none !important; /* Removes any borders */
+    box-shadow: none !important; /* Removes shadows */
+    opacity: 0.7; /* Adjust transparency */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1; /* Makes arrows fully visible on hover */
+}

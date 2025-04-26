@@ -1,0 +1,12 @@
+.mat-button-link {
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: white; /* default color */
+    font-weight: bold;
+  }
+  
+  .mat-button-link:hover {
+    transform: scale(1.05);
+    color: #ffeb3b; /* yellow on hover */
+  }
+  

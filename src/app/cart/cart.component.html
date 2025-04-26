@@ -1,0 +1,47 @@
+<div class="cart-container">
+    <br>
+    <br>
+    <h2>Shopping Cart</h2>
+  
+    <div *ngIf="cartItems.length === 0">
+      <p>Your cart is empty.</p>
+    </div>
+  
+    <div *ngFor="let item of cartItems" class="cart-item">
+      <img [src]="item.imageUrl" alt="medicine" class="item-image" />
+      <div class="item-details">
+        <h4>{{ item.name }}</h4>
+        <p>Price: ₹{{ item.price }}</p>
+        <input type="number" [(ngModel)]="item.quantity" (change)="updateQuantity(item.id, $event)" min="1" />
+        <button (click)="removeItem(item.id)">Remove</button>
+      </div>
+    </div>
+  
+    <div *ngIf="cartItems.length > 0" class="cart-summary">
+      <h3>Total Price: ₹{{ totalPrice }}</h3>
+      <button class="checkout-btn" (click)="proceedToCheckout()" routerLink="/checkout">Proceed to Checkout</button>
+    </div>
+  </div>
+  
+  <br><br><br><br><br><br><br><br>
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/cor1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/cor2.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <br>
+  </div>
+  
+  
